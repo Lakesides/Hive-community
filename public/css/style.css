@@ -125,7 +125,15 @@ img{
 .header__button {
     grid-area: button;
     display: flex;
-    justify-content: end;
+    margin-left: 110px;
+}
+
+@media only screen and (min-width: 768px) {
+    .header__button {
+        grid-area: button;
+        display: flex;
+        justify-content: end;
+    }
 }
 
 .header__button button {
@@ -140,6 +148,7 @@ img{
     font-weight: 600;
     color: limegreen;
     background: transparent;
+
 }
 
 .header__button button:hover {
