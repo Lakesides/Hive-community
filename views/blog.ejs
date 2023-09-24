@@ -1,0 +1,34 @@
+<div class="author">
+    <h1 class="author__heading">Hive Blog</h1>
+    <p class="author__body" id="blogger">Where you catch up with a lot of informations from this community.</p>
+</div>
+
+<div class="items">
+    <img src="img/blog.jpg" alt="person looking out the window" class="hero-image" width="981" height="528">
+    <img src="img/welcome.jpg" alt="person looking out the window" class="hero-image" width="981" height="528">
+    <img src="img/motivation2.jpg" alt="person looking out the window" class="hero-image" width="981" height="528">
+</div>
+
+<section class="articles">
+    <h2 class="article__heading"><div><span>Latest Posts</span> <span id="date">Date</span></div></h2>
+
+    <ul class="article-ul" id="design">
+
+        <% data.forEach(post => { %>
+        
+            <span id="change">
+                <a href="/post/<%= post._id %>" class="title">
+                    <span><%= post.title %></span>
+                    <span class="article-list__date"><%= post.updatedAt.toDateString() %></span>
+                </a>
+            </span>
+        <% }) %> 
+        </ul>
+
+        <% if (nextPage !== null) { %>
+            <a href="/blog?page=<%= nextPage %>" class="pagination"><i class="bi bi-arrow-left"></i> View Older Posts </a> 
+        <% } %>
+
+ 
+
+</section>

@@ -1,0 +1,23 @@
+<div class="author">
+    <h2 class="author__heading" id="search">Search Results <i class="bi bi-search" id="icon"></i></h2>
+</div>
+
+<section class="articles">
+
+    <ul class="article-ul">
+
+        <% if (data.length > 0) { %>
+        <% data.forEach(post => { %>
+            <li>
+                <a href="/post/<%= post._id %>" class="title">
+                    <span><%= post.title %></span>
+                    <span class="article-list__date"><%= post.updatedAt.toDateString() %></span>
+                </a>
+            </li>
+        <% }) %>
+        <% } else { %>
+            <p style="font-size: 35px; font-weight: 500; background-color: whitesmoke; border-radius: 10px; padding: 30px;"> <span style="color: red;">No search found!</span> Blog might have been deleted. Try searching valid blogs...</p>
+        <% } %> 
+        </ul>
+
+</section>
