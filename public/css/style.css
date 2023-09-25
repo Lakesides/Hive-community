@@ -202,7 +202,7 @@ img{
 .article__heading {
     margin-top: 4rem;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 28px;
     display: flex;
     flex-direction: column;
     color: blueviolet;
@@ -211,20 +211,6 @@ img{
 #date {
     display: none;
     color: limegreen;
-}
-
-@media only screen and (min-width: 834px) {
-    #date {
-        display: inline-block;
-        margin-left: 25.5rem;
-    }
-}
-
-@media only screen and (min-width: 900px) {
-    #date {
-        display: inline-block;
-        margin-left: 35.5rem;
-    }
 }
 
 .article__ul {
@@ -666,7 +652,7 @@ img{
 }
 
 #post {
-    margin-left: 9rem;
+    margin-left: 11rem;
 }
 
 @media only screen and (min-width: 768px) {
