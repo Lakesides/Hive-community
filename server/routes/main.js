@@ -5,7 +5,7 @@ const User = require("../models/User");
 const Auth = require("../models/Auth");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
-const welcomeLayout = "../views/layouts/welcome";
+const welcomeLayout = "../views/layouts/welcome"; 
 
 
 

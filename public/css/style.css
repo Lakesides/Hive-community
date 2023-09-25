@@ -125,7 +125,7 @@ img{
 .header__button {
     grid-area: button;
     display: flex;
-    margin-left: 110px;
+    margin-left: 100px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -202,7 +202,7 @@ img{
 .article__heading {
     margin-top: 4rem;
     font-weight: 600;
-    font-size: 45px;
+    font-size: 25px;
     display: flex;
     flex-direction: column;
     color: blueviolet;
@@ -299,7 +299,7 @@ img{
 
 .article {
     white-space: pre-line;
-    font-size: 25px;
+    font-size: 15px;
 }
 
 /* footer */
@@ -804,8 +804,8 @@ img{
 }
 
 .welcome p {
-    font-size: 25px;
     color: white;
+    font-size: 20px;
 }
 
 .welcome button {
