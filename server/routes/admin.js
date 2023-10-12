@@ -204,7 +204,7 @@ router.post( "/register", async (req, res) => {
 router.get("/logout", authMiddleWare, (req, res) => {
     res.clearCookie("token");
     // res.json({ message: "Logout Successful."});
-    res.redirect("/");
+    res.redirect("/blog");
 })
 
 module.exports = router;
